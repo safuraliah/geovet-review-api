@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: geovet-review-api
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python review_moderation.py
+    envVars:
+      - key: ADMIN_TOKEN
+        value: super-secret-admin-token-1234
